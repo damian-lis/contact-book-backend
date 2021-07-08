@@ -1,9 +1,9 @@
-import { PORT } from './env.js';
-import express from 'express';
-import connectDB from './config/db.js';
-import contactRoutes from './routes/contacts.routes.js';
-import authRoutes from './routes/auth.routes.js';
-import cors from 'cors'
+const express = require('express');
+const connectDB = require('./config/db.js');
+const contactRoutes = require('./routes/contacts.routes.js');
+const authRoutes = require('./routes/auth.routes.js');
+const cors = require('cors');
+
 
 connectDB();
 
@@ -14,7 +14,9 @@ app.use(express.json({ limit: '50mb' }));
 app.use('/contact', contactRoutes);
 app.use('/auth', authRoutes);
 
+const PORT = 5000
+
 app.listen(
   process.env.PORT || PORT,
-  console.log(`Server is running on ${PORT}`)
+  console.log(`Server is running on ${process.env.PORT || PORT}`)
 );

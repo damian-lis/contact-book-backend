@@ -1,6 +1,7 @@
-import asyncHandler from 'express-async-handler';
-import mongoose from 'mongoose';
-import Contact from '../models/contact.models.js';
+const asyncHandler = require('express-async-handler');
+const Contact = require('../models/contact.models.js');
+const mongoose = require('mongoose');
+
 
 const createContact = asyncHandler(async (req, res) => {
   const { name, email, phoneNumber, address, selectedImage } = req.body;
@@ -95,10 +96,12 @@ const updateContact = asyncHandler(async (req, res) => {
   }
 });
 
-export {
+module.exports = {
   createContact,
-  fetchContacts as getContacts,
+  fetchContacts,
   deleteContact,
   deleteContacts,
   updateContact,
 };
+
+
