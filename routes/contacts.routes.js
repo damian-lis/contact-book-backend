@@ -6,7 +6,7 @@ const {
   deleteContacts,
   updateContact,
 } = require('../controllers/contacts.controllers.js');
-const {protect} = rqeuire('../middlewares/auth.middlewares.js')
+const {protect} = require('../middlewares/auth.middlewares.js')
 
 
 const router = express.Router();
