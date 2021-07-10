@@ -1,4 +1,4 @@
-# Contact book (backend)
+# My Contact Book Backend App
 
 An application that allows you to log into the system in which you can add or remove various contacts (backend version). 
 
@@ -8,11 +8,11 @@ An application that allows you to log into the system in which you can add or re
 
 
 
-The frontend repo of this app is available [here](https://github.com/damian-lis/contact-book-frontend).
+The frontend repo of this app is available [here](https://github.com/damian-lis/my-contact-book-frontend-app).
 
 The backend live version is available [here](https://lydian-long-bay.glitch.me).
 
-The app live version is available [here](https://contact-book-frontend.vercel.app/).
+The app live version is available [here](https://my-contact-book-frontend-app.vercel.app/).
 
 <br/>
 
@@ -94,4 +94,4 @@ Open your localhost with your browser to see the result.
 
 <br/>
 
-To run the frontend version of this application go [here](https://github.com/damian-lis/contact-book-frontend).
+To run the frontend version of this application go [here](https://github.com/damian-lis/my-contact-book-frontend-app).
